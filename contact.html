@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+
+    <style>
+        *{
+           padding: 0;
+           margin: 0;
+           box-sizing: border-box;
+
+        }
+
+        body{
+           background: #1E1D1D;
+           color: white;
+        }
+
+        .container{
+           display: flex;
+           width: 90%;
+           margin: 30px auto;
+        }
+
+        .map-content{
+           width: 50%;
+           margin: 11px;
+        }
+
+        .map {
+             filter: grayscale(100%);
+         }
+
+         .map-content h2{
+            font-size: 2.5rem;
+            margin-bottom: 15px
+         }
+
+         .map iframe{
+            height: 410px;
+            width: 600px;
+            border: none;
+            border-radius: 10px;
+         }
+
+         .message-content{
+            width: 50%;
+            margin: 10px;
+         }
+
+         .message-content h2{
+             font-size: 2.5rem;
+             margin-bottom: 15px
+         }
+
+         .form-container{
+            width: 100%;
+            padding: 15px;
+            border: 1px solid RGBA(163, 164, 168,0.3);
+            border-radius: 10px;
+         }
+
+         form{
+           margin: 6px;
+
+         }
+
+         form .name-email,.phone-subject,.typing-text{
+           margin-bottom: 8px;
+           display: flex;
+         }
+
+         input[type=text],input[type=email],input[type=number]{
+            padding: 15px;
+            margin: 8px;
+            font-size: 18px;
+            width: 50%;
+            border: none;
+            border-radius: 7px;
+            background: RGBA(179, 181, 180,0.1);
+
+         }
+
+         .typing-text{
+            margin: 8px;
+
+         }
+
+         textarea{
+            padding: 15px;
+            width: 100%;
+            border-radius: 7px;
+            font-size: 18px;
+            border: none;
+            color: grey;
+            background: RGBA(179, 181, 180,0.1);
+         }
+
+         button{
+            margin: 7px 8px;
+            padding: 15px 40px;
+            border: 1px solid white;
+            border-radius: 30px;
+            background: transparent;
+            font-size: 18px;
+            color: white;
+            cursor: pointer;
+            transition: 0.4s eas;
+         }
+
+         button:hover{
+            color: black;
+            background: white;
+
+         }
+
+    </style>
+</head>
+<body>
+     <div class="container">
+         <div class="map-content">
+             <h2>Where we are</h2>
+             <div class="map">
+                 <iframe  class="map" src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d2042713.4462897547!2d34.45944110549726!3d-0.48615043479491926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d0.30197579999999996!2d34.769793!4m5!1s0x182f171dfb52ef3f%3A0x973a39272320f4d9!2sApen%20Softwares%2C%20Peace%20Towers%2C%20Ngara%20Rd%2C%20Nairobi!3m2!1d-1.2747446999999998!2d36.8203756!5e0!3m2!1sen!2ske!4v1697120239257!5m2!1sen!2ske"
+                          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             </div>
+         </div>
+
+         <div class="message-content">
+             <h2>Send us a message</h2>
+             <div class="form-container">
+                 <form action="">
+                     <div class="name-email">
+                          <input type="text" placeholder="Name">
+                          <input type="email" placeholder="Email">
+                     </div>
+
+                     <div class="phone-subject">
+                          <input type="number" placeholder="Phone">
+                          <input type="text" placeholder="Subject">
+                     </div>
+                     
+                     <div class="typing-text">
+                         <textarea name="" id="" cols="20" rows="5">Message</textarea>
+                     </div>
+                     <div class="btn">
+                         <button>Submit</button>
+                     </div>
+
+                 </form>
+             </div>
+         </div>
+     </div>
+</body>
+</html>
